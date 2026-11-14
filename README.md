@@ -21,7 +21,7 @@ Gonic is a modern, lightweight GUI framework designed specifically for Go develo
 
 ```bash
 # Clone the repository
-git clone https://github.com/Tyler1201623/GONIC-GO-GUI-
+git clone https://github.com/Tyler-Keesee/GONIC-GO-GUI-
 cd GONIC-GO-GUI-
 
 # Install dependencies 
@@ -30,9 +30,7 @@ go mod tidy
 
 ### Using as a Package (Coming Soon)
 
-```bash
-go get github.com/Tyler1201623/GONIC-GO-GUI-
-```
+The `go.mod` currently declares the local module name `gonic`, not the GitHub import path. Until the module path and published API are reconciled and tested, **clone the repository** rather than using `go get` as an installation instruction.
 
 ## Project Structure
 
@@ -54,7 +52,7 @@ Make sure to run `go mod tidy` in each directory before running examples.
 ### Main Demo
 
 ```bash
-cd gonic/cmd
+cd cmd
 go mod tidy
 go run .
 ```
@@ -62,7 +60,7 @@ go run .
 ### Web Demo
 
 ```bash
-cd gonic/cmd/htmlgui
+cd cmd/htmlgui
 go mod tidy
 go run .
 ```
@@ -70,7 +68,7 @@ go run .
 ### Counter Example
 
 ```bash
-cd gonic/examples/counter
+cd examples/counter
 go mod tidy
 go run .
 ```
@@ -78,7 +76,7 @@ go run .
 ### Dashboard Example
 
 ```bash
-cd gonic/examples/dashboard
+cd examples/dashboard
 go mod tidy
 go run .
 ```
@@ -86,7 +84,7 @@ go run .
 ### Standalone Fyne Example
 
 ```bash
-cd gonic/standalone
+cd standalone
 go mod tidy
 go run .
 ```
@@ -174,7 +172,7 @@ git add .
 git commit -m "Your commit message"
 
 # Add the remote repository (if not already set)
-git remote add origin https://github.com/Tyler1201623/GONIC-GO-GUI-.git
+git remote add origin https://github.com/Tyler-Keesee/GONIC-GO-GUI-.git
 
 # Push to GitHub
 git push -u origin main
@@ -182,7 +180,7 @@ git push -u origin main
 
 ## License
 
-MIT
+No `LICENSE` file is committed currently. Terms are not specified; add a full license file if MIT licensing is intended.
 
 ---
 
