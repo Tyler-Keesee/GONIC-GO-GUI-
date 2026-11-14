@@ -180,7 +180,7 @@ git push -u origin main
 
 ## License
 
-MIT
+No `LICENSE` file is committed currently. Terms are not specified; add a full license file if MIT licensing is intended.
 
 ---
 
