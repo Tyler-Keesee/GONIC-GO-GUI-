@@ -1,5 +1,44 @@
 # Gonic - The PyQt for Go
 
+## Windows 11: clone, install and run (PowerShell)
+
+This is a **Go** project. You do not need Python, pip, venv, or npm. Install Git and Go (the repository currently declares Go 1.18 as its minimum in the root module; a current Go toolchain is recommended). Run the following commands **one at a time**:
+
+```powershell
+go version
+```
+
+```powershell
+git clone https://github.com/Tyler-Keesee/GONIC-GO-GUI-.git
+```
+
+```powershell
+Set-Location .\GONIC-GO-GUI-
+```
+
+```powershell
+go mod download
+```
+
+```powershell
+Set-Location .\cmd
+```
+
+```powershell
+go mod download
+```
+
+```powershell
+go run .
+```
+
+The `cmd` directory has its own `go.mod`. Start the example from `cmd`, not from the repository root. GUI rendering depends on system graphical libraries and drivers; on Windows it needs a desktop session.
+
+**Verification:** `go version` and `go mod download` only verify tools/dependencies. A successful `go run` is the local smoke test. If you see compile errors, include the exact Go version, current folder, and first compiler error. Do not run `go mod tidy` blindly just to make the clone start, since it rewrites module files.
+
+---
+
+
 <p align="center">
   <strong>Beautiful, Simple, Pure Go GUI Framework</strong>
 </p>
