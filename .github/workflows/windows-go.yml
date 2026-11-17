@@ -1,0 +1,22 @@
+name: Gonic Windows Go build checks
+on:
+  push:
+    branches: [main]
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  windows:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version: '1.23.4'
+      - name: Root module dependencies
+        run: go mod download
+      - name: Compile framework
+        run: go build ./...
+      - name: Compile example app
+        working-directory: cmd
+        run: go build .
